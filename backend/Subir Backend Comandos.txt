@@ -1,0 +1,10 @@
+Opción 1: Localtunnel (La más rápida)
+Es una herramienta de Node.js que hace exactamente lo mismo que ngrok pero suele ser más flexible con las IPs.
+
+Instalación: Abre tu terminal (CMD o PowerShell) y escribe:
+npm install -g localtunnel
+
+Uso: Con tu backend de Spring Boot corriendo en el puerto 4000, ejecuta:
+lt --port 4000 --subdomain equipo-verde
+
+Resultado: Te dará una URL pública. Al abrirla por primera vez, te pedirá una "Tunnel Password", que es simplemente tu dirección IP pública actual (la puedes ver en sitios como "What is my IP").
