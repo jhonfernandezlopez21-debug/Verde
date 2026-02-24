@@ -58,7 +58,6 @@ public class FacturaServiceTests {
 
         FacturaModels f = new FacturaModels();
         f.setDescripcion("Factura de prueba por servicios");
-        f.setEstado("Pendiente");
         f.setSubtotal(new BigDecimal("200.00"));
         f.setPaciente(p);
 
@@ -81,7 +80,6 @@ public class FacturaServiceTests {
 
         FacturaModels f = new FacturaModels();
         f.setDescripcion("Factura de prueba con límite");
-        f.setEstado("Pendiente");
         f.setSubtotal(new BigDecimal("80.00"));
         f.setPaciente(p);
 
@@ -102,7 +100,6 @@ public class FacturaServiceTests {
 
         FacturaModels f = new FacturaModels();
         f.setDescripcion("Factura con paciente existente");
-        f.setEstado("Pendiente");
         f.setSubtotal(new BigDecimal("10.00"));
         f.setPaciente(ref);
 
@@ -113,3 +110,4 @@ public class FacturaServiceTests {
         assertEquals(savedP.getIdPaciente(), opt.get().getPaciente().getIdPaciente());
     }
 }
+
