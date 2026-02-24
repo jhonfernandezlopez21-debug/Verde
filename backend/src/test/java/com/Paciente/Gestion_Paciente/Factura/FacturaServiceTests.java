@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-
+//a
 import java.util.Optional;
 import java.math.BigDecimal;
 
@@ -110,4 +110,5 @@ public class FacturaServiceTests {
         assertEquals(savedP.getIdPaciente(), opt.get().getPaciente().getIdPaciente());
     }
 }
+
 
